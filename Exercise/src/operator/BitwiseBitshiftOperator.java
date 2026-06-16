@@ -39,14 +39,32 @@ public class BitwiseBitshiftOperator {
         System.out.println("num5 ^ num6 in binary: " + Integer.toBinaryString(num5 ^ num6));
         System.out.println("num5 ^ num6 in decimal: " + (num5 ^ num6));
 
-        System.out.println("----------- Bitwise Left Shift (<<) -----------");
-        // Bitwise Left Shift (<<)
+        System.out.println("----------- Signed Left Shift (<<) Operator -----------");
+        // Signed Left Shift (<<)
 
         int num7 = 8; // 1000 << 2 -> 100000 -> 32 in decimal 
 
-        System.out.println("num5 in binary: " + Integer.toBinaryString(num5));
-        System.out.println("num5 ^ num6 in binary: " + Integer.toBinaryString(num5 ^ num6));
-        System.out.println("num5 ^ num6 in decimal: " + (num5 ^ num6));
-    }
+        System.out.println("num7 in binary: " + Integer.toBinaryString(num5));
+        System.out.println("num7 << 2 in binary: " + Integer.toBinaryString(num7 << 2));
+        System.out.println("num7 << 2 in decimal: " + (num7 << 2));
 
+        System.out.println("----------- Signed Right Shift (>>) Operator -----------");
+        // Signed Right Shift (>>)
+
+        int num8 = 8; // 1000 >> 2 -> 10 -> 2 in decimal
+
+        System.out.println("num8 in binary: " + Integer.toBinaryString(num5));
+        System.out.println("num8 >> 2 in binary: " + Integer.toBinaryString(num8 >> 2));
+        System.out.println("num8 >> 2 in decimal: " + (num8 >> 2));
+
+        System.out.println("----------- Unary Bitwise Complement (~) Operator -----------");
+        // Unary Bitwise Complement (~)
+
+        int num9 = 8; // ~1000 -> 0111 -> 7 in decimal
+        // 1111 1111 1111 1111 1111 1111 1111 0111 -> -9 -> 7 - 16 = -9
+
+        System.out.println("num9 in binary: " + Integer.toBinaryString(num5));
+        System.out.println("~num9 in binary: " + Integer.toBinaryString(~num9));
+        System.out.println("~num9 in decimal: " + (~num9));
+    }
 }
