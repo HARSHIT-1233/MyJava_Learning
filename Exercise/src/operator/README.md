@@ -1,159 +1,142 @@
 # Java Operators Examples
 
-This repository contains Java programs demonstrating various operators used in Java programming. These examples help beginners understand how operators work and how they are applied in different scenarios.
+This repository contains Java programs demonstrating the various operators available in Java. These examples are designed to help beginners understand how different operators work and how they are used in real-world programming.
 
-## Files Included
+## Topics Covered
 
-### 1. ArithmeticOperator.java
+### 1. Arithmetic Operators
 
-Demonstrates arithmetic operations:
+**File:** `ArithmeticOperator.java`
 
-* Addition (+)
-* Subtraction (-)
-* Multiplication (*)
-* Division (/)
-* Modulus (%)
+Demonstrates:
 
-Also demonstrates String concatenation using the `+` operator.
+* Addition (`+`)
+* Subtraction (`-`)
+* Multiplication (`*`)
+* Division (`/`)
+* Modulus (`%`)
+* String Concatenation (`+`)
 
----
+### 2. Assignment Operators
 
-### 2. AssignmentOperator.java
+**File:** `AssignmentOperator.java`
 
-Demonstrates assignment and compound assignment operators:
+Demonstrates:
 
-* =
-* +=
-* -=
-* *=
-* /=
-* %=
+* Assignment (`=`)
+* Add and Assign (`+=`)
+* Subtract and Assign (`-=`)
+* Multiply and Assign (`*=`)
+* Divide and Assign (`/=`)
+* Modulus and Assign (`%=`)
 
-Shows how variables can be updated using shorthand assignment expressions.
+### 3. Unary Operators
 
----
+**File:** `UnaryOperator.java`
 
-### 3. UnaryOperator.java
+Demonstrates:
 
-Demonstrates unary operators:
+* Unary Plus (`+`)
+* Unary Minus (`-`)
+* Increment (`++`)
+* Decrement (`--`)
+* Logical NOT (`!`)
+* Prefix and Postfix Operations
 
-* Unary Plus (+)
-* Unary Minus (-)
-* Increment (++)
-* Decrement (--)
-* Logical NOT (!)
+### 4. Equality and Relational Operators
 
-Includes examples of both prefix and postfix increment operations.
+**File:** `EqualityRelationalOperator.java`
 
----
+Demonstrates:
 
-### 4. EqualityRelationalOperator.java
+* Equal To (`==`)
+* Not Equal To (`!=`)
+* Greater Than (`>`)
+* Less Than (`<`)
+* Greater Than or Equal To (`>=`)
+* Less Than or Equal To (`<=`)
 
-Demonstrates relational and equality operators:
+### 5. Conditional Operators
 
-* ==
-* !=
-* >
-* <
-* > =
-* <=
+**File:** `ConditionalOperator.java`
 
-Used to compare values and produce boolean results.
+Demonstrates:
 
----
+* Logical AND (`&&`)
+* Logical OR (`||`)
+* Ternary Operator (`?:`)
 
-### 5. ConditionalOperator.java
+### 6. Bitwise and Bit Shift Operators
 
-Demonstrates conditional operators:
+**File:** `BitwiseBitshiftOperator.java`
 
-* Logical AND (&&)
-* Logical OR (||)
-* Ternary Operator (?:)
+Demonstrates:
 
-Shows how conditional expressions are evaluated in Java.
+* Bitwise AND (`&`)
+* Bitwise OR (`|`)
+* Bitwise XOR (`^`)
+* Bitwise Complement (`~`)
+* Left Shift (`<<`)
+* Right Shift (`>>`)
 
----
+### 7. Operator Precedence
 
-### 6. BitwiseBitshiftOperator.java
+**File:** `OperatorPrecedence.java`
 
-Demonstrates bitwise and bit-shift operators:
+Demonstrates:
 
-#### Bitwise Operators
-
-* AND (&)
-* OR (|)
-* XOR (^)
-* Complement (~)
-
-#### Bit Shift Operators
-
-* Left Shift (<<)
-* Right Shift (>>)
-
-Also uses binary representations to explain how these operators affect values at the bit level.
-
----
-
-## How to Compile
-
-Compile all files:
-
-```bash
-javac *.java
-```
-
-Or compile individually:
-
-```bash
-javac ArithmeticOperator.java
-javac AssignmentOperator.java
-javac UnaryOperator.java
-javac EqualityRelationalOperator.java
-javac ConditionalOperator.java
-javac BitwiseBitshiftOperator.java
-```
+* Order of Evaluation
+* Parentheses Usage
+* Increment/Decrement Effects
+* Complex Expression Evaluation
 
 ---
 
 ## How to Run
 
+### Compile
+
+```bash
+javac FileName.java
+```
+
+Example:
+
+```bash
+javac ArithmeticOperator.java
+```
+
+### Execute
+
+```bash
+java ClassName
+```
+
+Example:
+
 ```bash
 java ArithmeticOperator
-java AssignmentOperator
-java UnaryOperator
-java EqualityRelationalOperator
-java ConditionalOperator
-java BitwiseBitshiftOperator
 ```
 
 ---
 
-## Topics Covered
+## Learning Objectives
 
-* Arithmetic Operators
-* Assignment Operators
-* Unary Operators
-* Relational Operators
-* Equality Operators
-* Logical Operators
-* Conditional Operators
-* Ternary Operator
-* Bitwise Operators
-* Bit Shift Operators
-* Binary Number Representation
+After completing these examples, you will be able to:
+
+* Understand Java operator categories.
+* Apply arithmetic and assignment operators correctly.
+* Use relational and logical operators in decision-making.
+* Work with bitwise operations and binary values.
+* Understand operator precedence and associativity.
+* Write cleaner and more efficient Java expressions.
 
 ---
 
-## Learning Outcomes
+## Requirements
 
-After completing these examples, you will understand:
-
-* How Java performs mathematical calculations
-* How variable assignment works
-* How comparison and logical operations are evaluated
-* How unary operators modify values
-* How bitwise operations manipulate binary data
-* How left and right shifts affect integer values
+* Java JDK 21 (Recommended)
+* Any Java IDE (IntelliJ IDEA, Eclipse, VS Code, NetBeans) or Command Line
 
 ---
 
