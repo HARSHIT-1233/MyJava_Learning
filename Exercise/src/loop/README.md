@@ -1,188 +1,234 @@
-# Java Loops
+# Java Loop Statements
 
-This repository contains Java programs that demonstrate different types of loops in Java. These examples help beginners understand how loops work, their syntax, and practical use cases.
+This project demonstrates the various **looping constructs in Java**. Loops allow a block of code to execute repeatedly until a specified condition becomes false.
 
-## Files Included
+The project includes examples of:
 
-### 1. DoWhileLoop.java
-Demonstrates the **do-while loop**, where the loop body executes at least once before the condition is checked.
-
-**Concepts Covered:**
-- User input using `Scanner`
-- Summing multiple numbers using a do-while loop
-- Countdown example
-- Nested `while` loop inside a `do-while` loop
-- Loop termination conditions
-
-**Topics:**
-- `do-while`
-- User input
-- Nested loops
+* `for` loop
+* `while` loop
+* `do-while` loop
+* `for-each` loop
+* Infinite loops
+* Labeled loops
 
 ---
 
-### 2. ForEachLoop.java
-Demonstrates the **for-each (enhanced for) loop** for traversing arrays.
+## 📂 Project Structure
 
-**Concepts Covered:**
-- Traditional `for` loop
-- Enhanced `for-each` loop
-- Iterating through character arrays
-- Calculating the sum of array elements
-- Traversing strings character by character
-
-**Topics:**
-- Enhanced for loop
-- Arrays
-- String iteration
-
----
-
-### 3. ForLoop.java
-Demonstrates different variations of the **for loop**.
-
-**Concepts Covered:**
-- Nested for loops
-- Multiple loop variables
-- Increment operations
-- Calculating sums
-- Even number iteration
-- Counter implementation
-
-**Topics:**
-- Nested loops
-- Multiple initialization variables
-- Loop control
-- Arithmetic operations
-
----
-
-### 4. InfiniteLoop.java
-Demonstrates the use of an **infinite loop** (`while(true)`) through a simple number guessing game.
-
-**Concepts Covered:**
-- Infinite loops
-- Random number generation
-- User input validation
-- Using `break` to exit loops
-- Practical application of endless loops
-
-**Topics:**
-- `while(true)`
-- Random class
-- Break statement
-- Number Guessing Game
-
-> **Note:** The second comparison in the guessing game should ideally be:
->
-> ```java
-> else if (userInput < generatedNumber)
-> ```
->
-> instead of
->
-> ```java
-> else if (userInput > generatedNumber)
-> ```
->
-> so that the program correctly asks the user to increase their guess.
-
----
-
-### 5. WhileLoop.java
-Demonstrates the **while loop** by calculating the factorial of a number.
-
-**Concepts Covered:**
-- User input
-- Factorial calculation
-- Handling special cases (0!, 1!, negative numbers)
-- Loop-controlled multiplication
-
-**Topics:**
-- While loop
-- Mathematical computation
-- Conditional statements
-
----
-
-## Concepts Learned
-
-- `for` loop
-- `while` loop
-- `do-while` loop
-- Enhanced `for-each` loop
-- Nested loops
-- Infinite loops
-- Loop control using `break`
-- User input with `Scanner`
-- Random number generation
-- Array traversal
-- String traversal
-- Factorial calculation
-- Sum of numbers
-
----
-
-## Requirements
-
-- Java JDK 17 or above (Compatible with Java 21)
-- Any Java IDE (IntelliJ IDEA, Eclipse, VS Code, NetBeans)
-
----
-
-## How to Run
-
-1. Clone the repository.
-
-```bash
-git clone <repository-url>
+```text
+Loop/
+│── ForLoop.java
+│── WhileLoop.java
+│── DoWhileLoop.java
+│── ForEachLoop.java
+│── InfiniteLoop.java
+└── LabelledLoops.java
 ```
 
-2. Navigate to the project folder.
+---
 
-```bash
-cd <project-folder>
-```
+# 1. ForLoop.java
 
-3. Compile the desired file.
+## Overview
 
-```bash
-javac FileName.java
-```
+Demonstrates the flexibility of the **for loop** using different examples.
 
-Example:
+### Concepts Covered
+
+* Nested for loops
+* Multiple loop variables
+* Incrementing and decrementing
+* Calculating the sum of numbers
+* Iterating through ranges
+* Infinite for loop (commented)
+
+### Examples
+
+* Nested loops
+* Printing loop counters
+* Sum of even numbers
+* Sum of natural numbers
+* Standard counting loop
+
+---
+
+# 2. WhileLoop.java
+
+## Overview
+
+Demonstrates the **while loop**, which executes as long as the specified condition remains true.
+
+### Concepts Covered
+
+* Condition-controlled iteration
+* Factorial calculation
+* User input using `Scanner`
+* Validation for negative numbers
+* Iterative mathematical calculations
+
+### Example
+
+Calculates the factorial of a user-entered number.
+
+---
+
+# 3. DoWhileLoop.java
+
+## Overview
+
+The **do-while loop** executes its body **at least once**, even if the condition is false.
+
+### Concepts Covered
+
+* Menu-style repetition
+* Summing multiple user inputs
+* Character-based loop continuation
+* Demonstrating guaranteed first execution
+* Nested while loop inside do-while
+
+### Example
+
+* Add multiple numbers until the user chooses to stop.
+* Demonstrates that the loop executes once regardless of the condition.
+
+---
+
+# 4. ForEachLoop.java
+
+## Overview
+
+The **for-each loop** simplifies iteration over arrays and collections.
+
+### Concepts Covered
+
+* Iterating through character arrays
+* Iterating through integer arrays
+* Calculating array sum
+* Iterating through characters of a String
+
+### Examples
+
+* Print each character
+* Calculate total of array elements
+* Traverse a String using `toCharArray()`
+
+---
+
+# 5. InfiniteLoop.java
+
+## Overview
+
+Demonstrates **infinite loops** and a practical use case.
+
+### Concepts Covered
+
+* Infinite `while(true)` loop
+* Number Guessing Game
+* Breaking out of an infinite loop
+* Importance of termination conditions
+* Example of an endless boolean-controlled loop
+
+### Learning Purpose
+
+Shows how infinite loops are useful when the number of iterations is unknown beforehand and how `break` is used to terminate them.
+
+---
+
+# 6. LabelledLoops.java
+
+## Overview
+
+Demonstrates the use of **labels** with nested loops.
+
+### Concepts Covered
+
+* Unlabeled nested loops
+* Labeled loops
+* Breaking out of multiple nested loops
+* Control flow using loop labels
+
+### Example
+
+* Difference between normal `break`
+* `break` with loop labels
+
+---
+
+# Difference Between Java Loops
+
+| Loop       | Condition Checked | Executes At Least Once | Best Used For                       |
+| ---------- | ----------------- | ---------------------- | ----------------------------------- |
+| `for`      | Before execution  | No                     | Known number of iterations          |
+| `while`    | Before execution  | No                     | Unknown number of iterations        |
+| `do-while` | After execution   | Yes                    | Menu-driven programs and user input |
+| `for-each` | Automatically     | No                     | Traversing arrays and collections   |
+
+---
+
+# Key Learning Outcomes
+
+After completing these programs, you will understand:
+
+* Different looping statements in Java
+* Nested loops
+* Infinite loops
+* User-controlled iteration
+* Array traversal
+* Labeled loops
+* Mathematical calculations using loops
+* Practical applications of loops
+
+---
+
+# How to Compile
 
 ```bash
 javac ForLoop.java
+javac WhileLoop.java
+javac DoWhileLoop.java
+javac ForEachLoop.java
+javac InfiniteLoop.java
+javac LabelledLoops.java
 ```
 
-4. Run the program.
+---
 
-```bash
-java FileName
-```
-
-Example:
+# How to Run
 
 ```bash
 java ForLoop
 ```
 
+```bash
+java WhileLoop
+```
+
+```bash
+java DoWhileLoop
+```
+
+```bash
+java ForEachLoop
+```
+
+```bash
+java InfiniteLoop
+```
+
+```bash
+java LabelledLoops
+```
+
 ---
 
-## Learning Outcomes
+# Prerequisites
 
-After completing these programs, you will be able to:
-
-- Understand the differences between all loop types.
-- Choose the appropriate loop for different scenarios.
-- Work with arrays using traditional and enhanced loops.
-- Perform mathematical operations using loops.
-- Create menu-driven and input-based applications.
-- Implement nested loops and infinite loops safely.
+* Java JDK 17 or above
+* Command Prompt / Terminal
+* Any Java IDE (IntelliJ IDEA, Eclipse, VS Code, NetBeans)
 
 ---
 
-## Author
+# Author
 
 Harshit Singh

@@ -28,7 +28,7 @@ public class ReturnStatement {
                 return;
         }
         System.out.println("Outside the switch statement");
-        
+
     }
 
 }
