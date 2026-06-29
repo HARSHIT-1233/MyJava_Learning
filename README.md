@@ -107,9 +107,9 @@ Through these examples, I aim to:
 * [x] Operators
 * [x] Input and Output
 * [x] Number Systems
-* [ ] Control Flow Statements
-* [ ] Methods
-* [ ] Arrays
+* [x] Control Flow Statements
+* [x] Methods
+* [x] Arrays
 * [ ] Object-Oriented Programming
 * [ ] Exception Handling
 * [ ] Collections Framework
